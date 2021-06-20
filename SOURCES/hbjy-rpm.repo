@@ -1,0 +1,7 @@
+[hbjy-rpm]
+name=Hayden Young's RPMs
+baseurl=https://rpm.hbjy.io
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.hbjy.io/RPM-GPG-KEY-hbjy
+
