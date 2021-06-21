@@ -1,12 +1,12 @@
 Name:       hbjy-release
 Version:    1
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    Hayden Young's RPMs repository configuration.
 
 License:    BSD
 
 URL:        https://rpm.hbjy.io
-Source0:    https://rpm.hbjy.io/RPM-GPG-KEY-hbjy
+Source0:    %{URL}/RPM-GPG-KEY-hbjy
 Source1:    hbjy-rpm.repo
 
 %description
