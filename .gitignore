@@ -2,3 +2,5 @@ BUILD/
 BUILDROOT/
 SRPMS/
 RPMS/
+srpm/
+dist/
