@@ -15,24 +15,24 @@ jobs:
       - name: Install Mock
         run: dnf install -y mock '@Development Tools'
       - name: Create SRPM
-        run: make srpm
+        run: mock -r epel-8-x86_64 --resultdir=srpm/ --buildsrpm --spec SPECS/hbjy-release.spec --sources=SOURCES/ --isolation=simple
       - uses: actions/upload-artifact@v2
         with:
-          name: srpm-build.log
+          name: build.log
           path: srpm/build.log
       - uses: actions/upload-artifact@v2
         with:
-          name: srpm-hbjy-release.src.rpm
+          name: hbjy-release.src.rpm
           path: srpm/*.src.rpm
       - uses: actions/upload-artifact@v2
         with:
-          name: srpm-hw_info.log
+          name: hw_info.log
           path: srpm/hw_info.log
       - uses: actions/upload-artifact@v2
         with:
-          name: srpm-root.log
+          name: root.log
           path: srpm/root.log
       - uses: actions/upload-artifact@v2
         with:
-          name: srpm-state.log
+          name: state.log
           path: srpm/state.log
